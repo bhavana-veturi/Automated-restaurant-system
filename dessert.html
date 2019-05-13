@@ -1,0 +1,85 @@
+<html>
+<body>
+<form name="f" action="ordering.php" method="POST">
+<table border="1" align="center" width="95%" colspan="5">
+<tr>
+<td>
+<img src="tea.jpg" align="middle" alt="tea" border="2" width="250" height="300"/>
+<br>
+<p>What better way to beat the heat than to have a glass of Iced tea
+<br><br>
+<input type="checkbox" name="c1" value="11" id="100">Rs.100</p>
+</td>
+
+
+<td>
+<img src="coffee.jpg" alt="coffee" border="2" width="250" height="300"/>
+<br>
+<p>A cry out to all coffee loves, try out our Cold Coffee
+<br><br>
+<input type="checkbox" name="c1" value="12" id="150">Rs.150</p>
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="milk.jpg" alt="milkshake" border="2" width="250" height="300" />
+<br>
+<p>Milkshake
+<br><br>
+<input type="checkbox" name="c1" value="13" id="160">Rs.160</p>
+</td>
+
+<td>
+<img src="icecream.jpg" alt="ice cream" border="2" width="250" height="300">
+<br>
+<p> Ice cream
+<br><br>
+<input type="checkbox" name="c1" value="14" id="175">Rs.175</p>
+</td>
+
+</tr>
+</table>
+<input type="button" name="b1" value="Order" onclick="abc()">
+</form>
+
+<script language="Javascript">
+/*function abc()
+{
+alert("A");
+a=document.getElementsByName("c1");
+arr=[];
+
+for(i=0;i<a.length;i+=1)
+{
+if(a[i].checked)
+arr[i]=a[i].id;      //the IDs of the food ordered is stored in an array, this can be passed to the chef
+}
+
+}*/
+</script>
+
+<style>
+body {background-color: maroon;}
+table { table-layout: fixed; }
+td { width: 50%; }
+
+p {
+    font-family: "Impact", Charcoal, sans-serif;
+color:white;
+}
+
+img {
+    display: block;
+    margin: auto;
+    	
+}
+button{
+ display: block;
+ margin: auto;
+height:10%;
+width: 15%;
+font-family: "Impact", Charcoal, sans-serif;
+}
+</style>
+</html>

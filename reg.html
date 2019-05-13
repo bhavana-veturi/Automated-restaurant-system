@@ -1,0 +1,41 @@
+ENTER YOUR DETAILS TO REGISTER WITH US
+<form name="f" action="regchk.php" action="POST">
+<table align="center"> <tr>
+<th colspan ="6"> SIGN UP: </th>
+</tr>
+<tr>
+<td> NAME : </td>
+<td> <input type=text name="t1"></td>
+</tr>
+<tr>
+<td> EMAIL_ID : </td>
+<td> <input type=text name="t2"></td>
+</tr>
+<tr>
+<td> PASSWORD : </td>
+<td> <input type=password name="t3"></td>
+</tr>
+<tr>
+<td> RE-ENTER PASSWORD : </td>
+<td> <input type=password name="t4"></td>
+</tr>
+<tr ><th colspan=6>
+<input type=submit name="b1" value="REGISTER" onclick="abc()">
+</td></th></tr>
+</table>
+<script>
+function abc()
+{
+if(t3!=t4)
+{
+	alert("Password mismatch");
+	window.location.replace("reg.html");
+}
+}
+<style>
+body {
+    background-image: url("aa.jpg") ;
+ background-size: cover;
+ background-repeat: no-repeat;
+    background-attachment: fixed;}
+</style>

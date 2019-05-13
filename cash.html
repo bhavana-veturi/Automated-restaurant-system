@@ -1,0 +1,39 @@
+cashier.html
+<html>
+<head>
+<h2 align=center> Customer Details:</h2>
+</head><body><center>
+<table border=2>
+ <thead>
+            <tr>
+                <td>Username</td>
+                <td> Amount</td>
+                <td>Status</td>
+            </tr>
+        </thead>
+        <tbody>
+<?php   
+         include 'login.php';
+            $conn = mysqli_connect("localhost","root", "","restaurant");
+            if (!$conn) {
+                die(mysqli_error());
+            }
+           
+            $results = mysqli_query("SELECT X.username,cashier.price ,cashier.status FROM X INNER JOIN cashier ON X.username=cashier.username");
+");
+      
+            while($row = mysql_fetch_array($results)) {
+            ?>
+                <tr>
+                    <td><?php echo $row['Username']?></td>
+                    <td><?php echo $row['Amount']?></td>
+<td><?php echo $row['Status']?></td> </tr>
+
+            <?php
+            }
+            ?>
+            </tbody>
+  </tr>
+       </table><br>
+<center><form name="f1" action="cash.php" method="get">
+Enter user name to change status:<input type="text" name="t1"><br><input type=submit value="change status"></form></html>.

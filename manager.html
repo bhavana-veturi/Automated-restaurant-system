@@ -1,0 +1,62 @@
+<head>
+<style>
+body {
+padding: 0;
+margin: 0;
+}
+#upleft { 
+   width:100%; 
+   height: 20%; 
+float:left; 
+background-image:url("food.jpg");
+background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#upright { 
+   width:30%; 
+   height:80%; 
+   background:lightblue; 
+   float:left
+}
+#below { 
+   height:100%; 
+   width:100%; 
+   background:lightpink;
+}
+</style>
+<div id="upleft"> 
+<h1 style="color:yellow;font-style:italic;font-size:50px;text-align: center">ABC BISTRO</h1>
+</div>
+<div id ="upright">
+<form name="f" >
+<br><br><br>
+<input type=button name="b1" value="1. VIEW EMPLOYEE DETAILS" onclick="aaa()" >
+<br><br>
+<input type=button name="b2" value="2. VIEW REGISTERED USER DETAILS"onclick=bbb()" >
+<br><br>
+<input type=button name="b3" value="3. VIEW BOOKED/VACANT TABLE DETAILS"onclick="ccc()" >
+<br><br>
+<input type=submit name="b4" value="4. VIEW INVENTORY DETAILS"onclick="ddd()" >
+</form>
+</div>
+<div id="below">
+<script>
+function aaa()
+{
+ document.writeln("<?php header('Location:a.php'); ?>");     // make it fit the div size 
+} 
+function bbb()
+{
+ document.writeln("<?php header('Location:b.php'); ?>");
+} 
+function ccc()
+{
+ document.writeln("<?php include('Location:c.php'); ?>");
+} 
+function ddd()
+{
+ document.writeln("<?php include('Location:d.php'); ?>");
+} 
+</script>
+</div>
